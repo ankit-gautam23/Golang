@@ -17,7 +17,7 @@ func main() {
     http.ListenAndServe(":8080", nil)
 }
 ```
-We define two endpoints here, one for handling a list of todos (/todos) and one for handling individual todos (/todos/{id}).
+I defined two endpoints here, one for handling a list of todos (/todos) and one for handling individual todos (/todos/{id}).
 
 Now, let's implement the handlers for these endpoints. First, let's implement the handler for the /todos endpoint:
 
@@ -33,7 +33,7 @@ func handleTodos(w http.ResponseWriter, r *http.Request) {
     }
 }
 ```
-This handler function will switch on the HTTP method and call a different function based on the method. We have implemented the GET and POST methods here, but you could also implement PUT and DELETE methods.
+This handler function will switch on the HTTP method and call a different function based on the method. I have implemented the GET and POST methods here, but you could also implement PUT and DELETE methods.
 
 Let's implement the getTodos and createTodo functions:
 ```
